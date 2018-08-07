@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AroundPrinceton</string>
+    <string name="get_server_data_button">Get server Data</string>
+    <string name="search_button">Go</string>
+    <string name="search_bar">Search AroundPrinceton</string>
+    <string name="google_maps_key">AIzaSyCOm8eaD56dA98EfAoW2_LpYbDSpULYWcY</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="menu_items">
+        <item>Kitchens</item>
+        <item>Laundry Rooms</item>
+        <item>Printers</item>
+        <item>Library</item>
+        <item>Food</item>
+    </string-array>
+
+    <string name="menu">Menu</string>
+    <string name="back">Back</string>
+    <string name="show_list_button">Show List</string>
+    <string name="x_button">X</string>
+</resources>

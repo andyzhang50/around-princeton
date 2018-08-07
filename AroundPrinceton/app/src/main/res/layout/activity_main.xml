@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/map_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/search_bar"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/menuButton"
+            android:background="@color/white"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="@string/menu"
+            android:textSize="10sp"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/backButton"
+            android:background="@color/white"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/back"
+            android:textSize="10sp"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/xButton"
+            android:background="@color/white"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/x_button"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/searchButton"
+            android:background="@color/white"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/queryText"
+            android:layout_toLeftOf="@id/xButton"
+            android:layout_toStartOf="@id/xButton"
+            android:text="@string/search_button"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <EditText
+            android:id="@+id/queryText"
+            android:imeOptions="actionDone"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/search_bar"
+            android:inputType="textPersonName"
+            android:layout_alignTop="@id/menuButton"
+            android:layout_alignBottom="@+id/menuButton"
+            android:layout_toRightOf="@+id/menuButton"
+            android:layout_toEndOf="@+id/menuButton"
+            android:layout_toLeftOf="@id/searchButton"
+            android:layout_toStartOf="@id/searchButton"/>
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/map_expand_layout"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/search_bar"
+        android:layout_alignParentBottom="true"/>
+
+    <FrameLayout
+        android:id="@+id/list_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/detailed_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/item_name_detailed"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="28sp"
+            android:textColor="@color/text"/>
+
+        <TextView
+            android:id="@+id/item_description_detailed"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/item_name_detailed"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/simple_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/item_name_simple"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="28sp"
+            android:textColor="@color/text"/>
+
+        <TextView
+            android:id="@+id/item_description_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/item_name_simple"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/text"/>
+
+    </RelativeLayout>
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/menuButton"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:text="@string/menu"-->
+        <!--android:textSize="10sp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/searchButton"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignTop="@+id/queryText"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:text="@string/search_button" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/queryText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="@string/search_bar"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:layout_alignTop="@id/menuButton"-->
+        <!--android:layout_alignBottom="@+id/menuButton"-->
+        <!--android:layout_toRightOf="@+id/menuButton"-->
+        <!--android:layout_toEndOf="@+id/menuButton"-->
+        <!--android:layout_toLeftOf="@id/searchButton"-->
+        <!--android:layout_toStartOf="@id/searchButton"/>-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/autocomplete_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_below="@id/action_bar"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+
+    <Button
+        android:id="@+id/showListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/show_list_button"
+        android:background="@color/white"
+        />
+
+    <FrameLayout
+        android:id="@+id/menu_fragment_container"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/showListButton"
+        android:layout_below="@id/search_bar"
+        />
+
+</RelativeLayout>
